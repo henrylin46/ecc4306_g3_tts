@@ -11,7 +11,7 @@ class TextInputApp:
 
         self.text_font = tkfont.Font(family="Helvetica", size=12)
         # add the group number, name and student number before the text box
-        self.group_label = tk.Label(root, text="Group 1: Tacotron 2 TTS", font=self.text_font)
+        self.group_label = tk.Label(root, text="Group 3: Tacotron 2 TTS", font=self.text_font)
         self.group_label.pack(pady=5)
         self.name_label = tk.Label(root, text="205812 Safwat Bin Farid", font=self.text_font)
         self.name_label.pack(pady=5)
