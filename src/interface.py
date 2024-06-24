@@ -7,13 +7,21 @@ import simpleaudio as sa
 class TextInputApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Text Input Example")
+        self.root.title("Tacotron 2 TTS")
 
         self.text_font = tkfont.Font(family="Helvetica", size=12)
+        # add the group number, name and student number before the text box
+        self.group_label = tk.Label(root, text="Group 1: Tacotron 2 TTS", font=self.text_font)
+        self.group_label.pack(pady=5)
+        self.name_label = tk.Label(root, text="205812 Safwat Bin Farid", font=self.text_font)
+        self.name_label.pack(pady=5)
+        self.name_label = tk.Label(root, text="209469 GUO ZIXIAN", font=self.text_font)
+        self.name_label.pack(pady=5)
+        self.name_label = tk.Label(root, text="209471 LIN ZHUOFAN", font=self.text_font)
+        self.name_label.pack(pady=5)
 
         self.text_frame = tk.Frame(root)
         self.text_frame.pack(padx=10, pady=10)
-
         self.text_widget = tk.Text(
             self.text_frame, wrap=tk.WORD, font=self.text_font, width=50, height=15
         )
